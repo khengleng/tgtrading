@@ -50,6 +50,7 @@ npm run db:migrate
 3. Add these web-service variables:
 
    - `DATABASE_URL=${{Postgres.DATABASE_URL}}`
+   - `DATABASE_SSL_MODE=no-verify` — required only for Railway's private Postgres certificate
    - `TELEGRAM_BOT_TOKEN` — the BotFather token (secret)
    - `SESSION_SECRET` — a long random secret (secret)
    - `AUTHORIZED_TELEGRAM_IDS` — comma-separated numeric Telegram IDs allowed to enter
